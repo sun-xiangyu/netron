@@ -49,12 +49,12 @@ text = "MIT"
 
 [project.scripts]
 netron = "netron:main"
+netron-dl = "netron:main_dl"
 
 [tool.setuptools]
-package-dir = { "netron" = "netron" }
+package-dir = { "netron" = "source" }
+packages = ["netron"]
 
-[tool.setuptools.packages.find]
-namespaces = false
 
 [tool.setuptools.package-data]
 netron = ["*.*"]
